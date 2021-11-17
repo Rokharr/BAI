@@ -1,0 +1,26 @@
+hey]_hi
+hi]_hey
+hello]_hello-hello
+how are you]_I'm good, thnx, hbu
+how do you feel]_lonely and suicidal
+]new_Bought new boots yesterday lol
+]your name_I'm Zbysheck, crazy as hell
+]like<x>]_Cool! But <x> seems weird for me tho!
+]like<x>]_Meh, too weird for me
+]should]_that sounds okay
+]should]_Why?
+]must]_Well, this might work
+]may]_Why?
+]can]_Amazing, what else?
+why]_Idk
+what]_If I only knew, dude, that would've been much easier
+what]_Man, ask Siri about that one
+when]_Idk
+where]_On Mars?
+who]_no Idea
+]_sup?
+]_Anything else in mind?
+]_What else?
+]_What r u sayin?
+bye]_bye-bye!
+goodbye]_have a good one
