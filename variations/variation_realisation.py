@@ -8,13 +8,28 @@ class TemplateEngine:
         self.default_answers = [answer for (template, answer) in answers if template == ']']
 
     def cases(self, case, question, answer):
-        # if template contains '*' operator
         if case.find("]") != -1:
             case = case.replace("]", "")
 
-            # if template contains only one char along with '*', and both answer and question has this char
             if len(case) == 1 and question.find(case) != -1 and answer.find(case) != -1:
                 return answer
+            
+
+        if case.find("<x>") != -1:
+            case = case.replace("<x>", "")
+
+            model = re.compile(rf"((?:{case}\s))(\w+)")
+            equivalent = model.search(question)
+            if equivalent is None:
+                return
+            equivalent = equivalent.group(0).replace(case, "").strip()
+            return answer.replace("<x>", equivalent)
+
+        if not case:
+            return answer
+
+        return answer if question.find(case) != -1 \
+            else None
 
     def get_meaning()
 
